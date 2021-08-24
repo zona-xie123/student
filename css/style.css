@@ -1,3 +1,8 @@
+@keyframes cloud-2 {
+  100% {
+    transform: translateX(35%);
+  }
+}
 @keyframes float {
   0% {
     transform: translateY(-10px);
@@ -471,6 +476,7 @@
 .kv .open-arrow svg {
   max-width: 170px;
   width: 100%;
+  height: 56px;
 }
 .kv .open-arrow p {
   opacity: 0;
@@ -481,6 +487,7 @@
 
 .service-group {
   margin: 60px 0;
+  margin-top: 0;
 }
 .service-group > img {
   width: 100%;
@@ -973,6 +980,7 @@
   width: 100%;
   position: absolute;
   right: 100px;
+  animation: cloud-2 infinite ease-out 3.5s alternate;
 }
 .student-loan .plane {
   max-width: 320px;
@@ -1292,6 +1300,31 @@
   color: #46A59B;
 }
 
+@media screen and (min-width: 1280px) {
+  .faq-section .content .qa svg {
+    height: 7px;
+  }
+
+  .pi-section .tire-1, .pi-section .tire-2 {
+    height: 40px;
+  }
+
+  .service-group .row .book {
+    height: 201px;
+  }
+
+  .social-section .block > img {
+    height: 40px;
+  }
+
+  .kv .pic {
+    height: 713px;
+  }
+
+  .kv .open-arrow svg {
+    height: 56px;
+  }
+}
 @media screen and (max-width: 1280px) {
   .faq-section {
     padding: 0 20px;
@@ -1330,6 +1363,10 @@
 
   .social-section .container {
     padding: 0 20px;
+  }
+  .social-section .sub-title {
+    max-width: 225px;
+    margin-left: 56px;
   }
   .social-section .left-bn {
     display: block;
@@ -1407,6 +1444,10 @@
     transform: translateX(-50%);
   }
 
+  .mobile .sub-title {
+    top: 50%;
+    transform: translateY(-50%);
+  }
   .mobile .con {
     display: block;
     margin: 0 auto;
@@ -1418,6 +1459,17 @@
     max-width: 339px;
   }
 
+  .section-model .sub-title p {
+    margin: 10px auto;
+  }
+  .section-model .con {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .section-model .con ul {
+    text-align: left;
+  }
   .section-model:nth-child(even) {
     display: flex;
     justify-content: center;
@@ -1431,6 +1483,16 @@
 
   .mobile .window {
     display: none;
+  }
+}
+@media screen and (max-width: 940px) {
+  .service-group .row .col-3 {
+    width: calc(100% / 3 - 28px);
+    margin: 12px;
+  }
+  .service-group .row .col-3 img {
+    max-width: 160px;
+    height: 127px;
   }
 }
 @media screen and (max-width: 860px) {
@@ -1468,6 +1530,14 @@
   }
 }
 @media screen and (max-width: 550px) {
+  .social-section .bear {
+    max-width: 130px;
+  }
+  .social-section .sub-title {
+    max-width: 154px;
+    margin-left: 12px;
+  }
+
   .member-section .point {
     left: -6px;
     top: 105px;
@@ -1476,6 +1546,7 @@
 
   .faq-section {
     padding: 0 10px;
+    margin: 40px 0;
   }
   .faq-section .faq-tab {
     font-size: 14px;
@@ -1493,6 +1564,9 @@
     vertical-align: top;
   }
 
+  .fund-section .sub-title p {
+    font-size: 14px !important;
+  }
   .fund-section .robot-1 {
     max-width: 143px;
     right: -59px;
@@ -1516,6 +1590,7 @@
   .section-model .con ul {
     font-size: 16px;
     padding-left: 22px;
+    margin: 20px 0;
   }
 
   .sub-title h2 {
@@ -1531,6 +1606,10 @@
   .pi-section .pi-2 {
     top: -142px;
     max-width: 219px;
+  }
+  .pi-section .con ul {
+    font-size: 16px;
+    padding-left: 22px;
   }
   .pi-section .con .btns {
     display: block;
@@ -1574,8 +1653,12 @@
     margin-left: 0;
   }
 
+  .service-group {
+    margin-top: 40px;
+  }
   .service-group h2 {
     transform: translateY(0px);
+    font-size: 20px;
   }
   .service-group .row .book {
     max-width: 107px;
@@ -1585,9 +1668,10 @@
   .service-group .row .col-3 {
     max-width: 162px;
     margin: 6px 6px;
+    width: 100%;
   }
   .service-group .row .col-3 p {
-    font-size: 15px;
+    font-size: 14px;
   }
   .service-group .row .col-3 img {
     max-width: 114px;
